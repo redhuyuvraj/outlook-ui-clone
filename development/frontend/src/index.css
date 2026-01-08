@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-gray-900;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+}
+
+.table-container {
+  @apply bg-white rounded-xl shadow-md overflow-hidden border border-gray-100;
+}
+
+.table-header {
+  @apply text-left uppercase text-xs font-semibold tracking-wide text-white;
+}
+
+.table-cell {
+  @apply px-4 py-3 text-sm text-gray-800 align-top;
+}
+
+.table-row:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.sidebar-item {
+  @apply px-3 py-2 rounded-lg hover:bg-blue-100 cursor-pointer transition;
+}
+
+.sidebar-item.active {
+  @apply bg-blue-600 text-white hover:bg-blue-500;
+}
